@@ -8,7 +8,8 @@
     "dev": "concurrently -k \"vite\" \"wait-on http://localhost:5173 && electron . --dev\"",
     "build": "tsc -b && vite build",
     "start": "electron .",
-    "package:win": "npm run build && electron-builder --win nsis"
+    "package:win": "npm run build && electron-builder --win nsis",
+    "package:mac": "npm run build && electron-builder --mac dmg --universal"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
@@ -49,6 +50,22 @@
           ]
         }
       ]
+    },
+    "mac": {
+      "icon": "build/icon.png",
+      "category": "public.app-category.lifestyle",
+      "artifactName": "Shelf-and-Sound-${version}-macOS-${arch}.${ext}",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "universal"
+          ]
+        }
+      ]
+    },
+    "dmg": {
+      "title": "Shelf & Sound ${version}"
     },
     "nsis": {
       "oneClick": false,
