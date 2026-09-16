@@ -4,7 +4,7 @@
 
 Shelf & Sound is a personal desktop library for organizing books and music albums into collections. Search public catalogs, save the titles you care about, and organize everything with covers, notes, genres, and custom tags.
 
-[Download Shelf & Sound for Windows](../../releases/latest/download/Shelf-and-Sound-Setup-1.1.2.exe)
+[Download Shelf & Sound for Windows](https://drive.google.com/drive/folders/1GLGZS191_5hn3DynDO_5vZkwCAz-0QoA?usp=drive_link)
 
 > **Windows notice:** The installer is not currently code-signed, so Microsoft Defender SmartScreen may display an “Unknown publisher” warning. Choose **More info** and then **Run anyway** if you trust this download.
 
